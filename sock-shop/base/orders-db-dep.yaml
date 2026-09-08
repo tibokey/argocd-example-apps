@@ -17,9 +17,9 @@ spec:
     spec:
       containers:
       - name: orders-db
-        image: mongo
+        image: mongo:7.0.15
         ports:
-        - name: mongo:7.0
+        - name: mongo
           containerPort: 27017
         securityContext:
           capabilities:
